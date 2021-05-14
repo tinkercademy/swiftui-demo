@@ -29,8 +29,9 @@ struct ScoresContentView: View {
                                     }
             )
             
-            // Small navigation bar style
-            .navigationBarTitle("Scores", displayMode: .inline)
+            // Large navigation bar style with
+            //   "Scores" as title
+            .navigationTitle("Scores")
             .fullScreenCover(isPresented: $isShowingClicker) {
                 ClickerContentView(scores: $scores)
             }
