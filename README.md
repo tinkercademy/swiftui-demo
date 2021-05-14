@@ -11,3 +11,4 @@
 | [Cat Fact](https://github.com/tinkercademy/swiftui-demo/tree/main/Cat%20Fact) | Sending a GET request to a Cat Fact API | `URLSession`, `@ObservedObject`, `ObservableObject`, `Codable`, `JSONDecoder`| 
 | [Clicker](https://github.com/tinkercademy/swiftui-demo/tree/main/Clicker) | Press a button and increment a counter | `Button`, `Text`, `VStack`, `.background`, `Color`, `.padding`, `.font`, `@State`|
 | [Clicker Version 2](https://github.com/tinkercademy/swiftui-demo/tree/main/Clicker%20Version%202) | When user hits a certain number of clicks, show congratulatory text | `String` interpolation, Conditionals|
+| [Clicker Version 3](https://github.com/tinkercademy/swiftui-demo/tree/main/Clicker%20Version%203) | Timer with clicker, click to 30 and get the number of seconds it took | `Timer` |
