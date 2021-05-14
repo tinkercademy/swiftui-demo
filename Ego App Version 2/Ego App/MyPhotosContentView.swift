@@ -20,6 +20,9 @@ struct MyPhotosContentView: View {
                          Photo(id: "KITKAT", image: UIImage(named: "cat")!),
                          Photo(id: "cation ⚛️", image: UIImage(named: "cat")!)]
     
+    @State private var showingImagePicker = false
+    @State var inputImage: UIImage?
+    
     var body: some View {
         NavigationView {
             // Essentially replicating a UICollectionView but in SwiftUI
@@ -37,11 +40,21 @@ struct MyPhotosContentView: View {
             .padding()
             .navigationTitle("It's me")
             .navigationBarItems(trailing: Button(action: {
-                // Do something
+                showingImagePicker = true
             }) {
                 Image(systemName: "plus")
             })
+        }.sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
+            ImagePicker(image: $inputImage)
         }
+    }
+    
+    func loadImage() {
+        guard let inputImage = inputImage else { return }
+        
+        photos.append(Photo(id: Date().description, image: inputImage))
+        
+        self.inputImage = nil
     }
 }
 

@@ -13,3 +13,4 @@
 | [Clicker Version 2](https://github.com/tinkercademy/swiftui-demo/tree/main/Clicker%20Version%202) | When user hits a certain number of clicks, show congratulatory text | `String` interpolation, Conditionals|
 | [Clicker Version 3](https://github.com/tinkercademy/swiftui-demo/tree/main/Clicker%20Version%203) | Timer with clicker, click to 30 and get the number of seconds it took | `Timer` |
 | [Ego App](https://github.com/tinkercademy/swiftui-demo/tree/main/Ego%20App) | a ridiculous cat worshipping app with `TabView` | `LazyVStack`, custom fonts, Animations - Rotation, Scale, Background, `TabView` |
+| [Ego App Version 2](https://github.com/tinkercademy/swiftui-demo/tree/main/Ego%20App%20Version%201) | Upload images! Also embedding UIKit into SwiftUI | `UIViewControllerRepresentable`, `UIImagePickerController`|
