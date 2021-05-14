@@ -6,8 +6,8 @@
 
 | Project          | Description                                            | What's Covered  |
 |------------------|--------------------------------------------------------|-----------------|
-| Advanced Clicker | 2 screen clicker with a countdown timer and score list | `List`, `Array`, `@Binding`, `@Environment`, `presentationMode`|
-| Advanced Clicker Version 2 - with animations | Animated countdown where the numbers change in opacity and scale | Animations, `.animation`, `.opacity`, `.scaleEffect`, ternary operators | 
-| Cat Fact | Sending a GET request to a Cat Fact API | `URLSession`, `@ObservedObject`, `ObservableObject`, `Codable`, `JSONDecoder`| 
-| Clicker | Press a button and increment a counter | `Button`, `Text`, `VStack`, `.background`, `Color`, `.padding`, `.font`, `@State`|
-| Clicker Version 2 | When user hits a certain number of clicks, show congratulatory text | `String` interpolation, Conditionals|
+| [Advanced Clicker](https://github.com/tinkercademy/swiftui-demo/tree/main/Advanced%20Clicker) | 2 screen clicker with a countdown timer and score list | `List`, `Array`, `@Binding`, `@Environment`, `presentationMode`|
+| [Advanced Clicker Version 2 - with animations](https://github.com/tinkercademy/swiftui-demo/tree/main/Advanced%20Clicker%20Version%202%20-%20with%20animations) | Animated countdown where the numbers change in opacity and scale | Animations, `.animation`, `.opacity`, `.scaleEffect`, ternary operators | 
+| [Cat Fact](https://github.com/tinkercademy/swiftui-demo/tree/main/Cat%20Fact) | Sending a GET request to a Cat Fact API | `URLSession`, `@ObservedObject`, `ObservableObject`, `Codable`, `JSONDecoder`| 
+| [Clicker](https://github.com/tinkercademy/swiftui-demo/tree/main/Clicker) | Press a button and increment a counter | `Button`, `Text`, `VStack`, `.background`, `Color`, `.padding`, `.font`, `@State`|
+| [Clicker Version 2](https://github.com/tinkercademy/swiftui-demo/tree/main/Clicker%20Version%202) | When user hits a certain number of clicks, show congratulatory text | `String` interpolation, Conditionals|
