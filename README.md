@@ -18,3 +18,4 @@
 | [Friends List Version 1](https://github.com/tinkercademy/swiftui-demo/tree/main/Friends%20List%20Version%201) | Friends list app | `NavigationView`, passing objects through views, `List` |
 | [Friends List Version 2](https://github.com/tinkercademy/swiftui-demo/tree/main/Friends%20List%20Version%202) | Friends list app with sloths?! | `Image`, importing external images, `resizable()`, `aspectRatio` |
 | [Friends List Version 3](https://github.com/tinkercademy/swiftui-demo/tree/main/Friends%20List%20Version%203) | Sloths, Sliders & Safari | `SafariServices`, `UIViewControllerRepresentable`, `Slider` |
+| [Friends List Version 4](https://github.com/tinkercademy/swiftui-demo/tree/main/Friends%20List%20Version%203) | Manipulating, Deleting, Moving and Editing Friends | `ForEach`, `onDelete`, `onMove` |
