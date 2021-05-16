@@ -1,4 +1,4 @@
- <img src="https://static.wixstatic.com/media/1234b1_f2c4ba7967134d53805e9007b844e92d~mv2.png/v1/fill/w_385,h_283,al_c,usm_0.66_1.00_0.01/Logo_Margins.png" width="70"> 
+<a href="https://swiftinsg.org"> <img src="https://static.wixstatic.com/media/1234b1_f2c4ba7967134d53805e9007b844e92d~mv2.png/v1/fill/w_385,h_283,al_c,usm_0.66_1.00_0.01/Logo_Margins.png" width="70"> </a>
 
 # SwiftUI Demo Projects
 ## Adapted from Swift Accelerator 2020 Demos
