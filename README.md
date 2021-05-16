@@ -15,3 +15,4 @@
 | [Ego App](https://github.com/tinkercademy/swiftui-demo/tree/main/Ego%20App) | a ridiculous cat worshipping app with `TabView` | `LazyVStack`, custom fonts, Animations - Rotation, Scale, Background, `TabView` |
 | [Ego App Version 2](https://github.com/tinkercademy/swiftui-demo/tree/main/Ego%20App%20Version%202) | Upload images! Also embedding UIKit into SwiftUI | `UIViewControllerRepresentable`, `UIImagePickerController`|
 | [Firey Todos](https://github.com/tinkercademy/swiftui-demo/tree/main/Firey%20Todos) | Collaborative Todos | Swift Package Manager, Firebase Real-Time Database, Firebase Authentication |
+| [Friends List Version 1](https://github.com/tinkercademy/swiftui-demo/tree/main/Friends%20List%20Version%201) | Friends list app | `NavigationView`, passing objects through views, `List` |
