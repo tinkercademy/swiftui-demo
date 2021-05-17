@@ -22,3 +22,4 @@
 | [Friends List Version 5](https://github.com/tinkercademy/swiftui-demo/tree/main/Friends%20List%20Version%205) | Binding friends, Adding and Editing friends | Custom `List`s, `Appending`, `@Binding`|
 | [Friends List Version 6](https://github.com/tinkercademy/swiftui-demo/tree/main/Friends%20List%20Version%206) | Persistent Friends, Saving Friends | `@ObservedObject`, `@ObservableObject`, `UserDefaults`, `Codable`, `PropertyList` |
 | [Instagram](https://github.com/tinkercademy/swiftui-demo/tree/main/Instagram) | We built a $100 billion app | `+=`, `@State`, `maxWidth`, `maxHeight`, `backgroundColor`|
+| [Jokes Version 1](https://github.com/tinkercademy/swiftui-demo/tree/main/Jokes%20Version201) | a simple jokes app with a punchline and a setup | `Array`, `onTapGesture`, `@State`, Conditionals |
