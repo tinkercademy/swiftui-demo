@@ -26,3 +26,4 @@
 | [Jokes Version 2](https://github.com/tinkercademy/swiftui-demo/tree/main/Jokes%20Version202) | a more organised jokes app | Modals, `struct` |
 | [Jokes Version 3](https://github.com/tinkercademy/swiftui-demo/tree/main/Jokes%20Version203) | Rate jokes! Like every great company, we don't take feedback into account. Feedback is just an illusion. | `Alert` |
 | [Jokes Version 4](https://github.com/tinkercademy/swiftui-demo/tree/main/Jokes%20Version204) | Celebrate good feedback, criticise bad ones. It has cats. | Presenting new screens using `sheet` |
+| [Jokes Version 5](https://github.com/tinkercademy/swiftui-demo/tree/main/Jokes%20Version205) | Jokes `withAnimation`. The rotating and pulsing animals really helps to drive the point whether it is that we appreciate their feedback or we hate them. | `withAnimation`, `scaleEffect`, `rotation` |
