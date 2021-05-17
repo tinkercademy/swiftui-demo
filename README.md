@@ -24,3 +24,4 @@
 | [Instagram](https://github.com/tinkercademy/swiftui-demo/tree/main/Instagram) | We built a $100 billion app | `+=`, `@State`, `maxWidth`, `maxHeight`, `backgroundColor`|
 | [Jokes Version 1](https://github.com/tinkercademy/swiftui-demo/tree/main/Jokes%20Version201) | a simple jokes app with a punchline and a setup | `Array`, `onTapGesture`, `@State`, Conditionals |
 | [Jokes Version 2](https://github.com/tinkercademy/swiftui-demo/tree/main/Jokes%20Version202) | a more organised jokes app | Modals, `struct` |
+| [Jokes Version 3](https://github.com/tinkercademy/swiftui-demo/tree/main/Jokes%20Version203) | Rate jokes! Like every great company, we don't take feedback into account. Feedback is just an illusion. | `Alert` |
