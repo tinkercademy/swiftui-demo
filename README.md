@@ -30,3 +30,4 @@
 | [Quiz Version 1](https://github.com/tinkercademy/swiftui-demo/tree/main/Quiz%20Version%201) | Kahoot-themed Quiz app with no functionality, laying out UI components | `VStack`, `HStack`, spacing |
 | [Quiz Version 2](https://github.com/tinkercademy/swiftui-demo/tree/main/Quiz%20Version%202) | Functioning Quiz App with pop-up results and questions | Conditional UI, `struct` |
 | [Text Field Quiz](https://github.com/tinkercademy/swiftui-demo/tree/main/Text%20Field%20Quiz) | A quiz app, with a text field and some cats | `@Binding`, Handling Return Key |
+| [Todo Version 1](https://github.com/tinkercademy/swiftui-demo/tree/main/Todo%20Version%201) | Todo list app | `struct`, `List Style`, `@Binding` |
