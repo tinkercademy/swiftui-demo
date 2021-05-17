@@ -29,3 +29,4 @@
 | [Jokes Version 5](https://github.com/tinkercademy/swiftui-demo/tree/main/Jokes%20Version%205) | Jokes `withAnimation`. The rotating and pulsing animals really helps to drive the point whether it is that we appreciate their feedback or we hate them. | `withAnimation`, `scaleEffect`, `rotation` |
 | [Quiz Version 1](https://github.com/tinkercademy/swiftui-demo/tree/main/Quiz%20Version%201) | Kahoot-themed Quiz app with no functionality, laying out UI components | `VStack`, `HStack`, spacing |
 | [Quiz Version 2](https://github.com/tinkercademy/swiftui-demo/tree/main/Quiz%20Version%202) | Functioning Quiz App with pop-up results and questions | Conditional UI, `struct` |
+| [Text Field Quiz](https://github.com/tinkercademy/swiftui-demo/tree/main/Text%20Field%20Quiz) | A quiz app, with a text field and some cats | `@Binding`, Handling Return Key |
