@@ -15,25 +15,53 @@ struct ContentView: View {
                 .padding()
             
             VStack {
-                Button("Option 1") {
+                HStack {
+                    Button(action: {
+                        
+                    }) {
+                        Image(systemName: "triangle.fill")
+                        Text("Option 1")
+                    }
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .background(Color.red)
+                    .foregroundColor(.white)
                     
+                    Button(action: {
+                        
+                    }) {
+                        Image(systemName: "diamond.fill")
+                        Text("Option 2")
+                    }
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .background(Color.blue)
+                    .foregroundColor(.white)
                 }
-                .padding()
-                .frame(maxWidth: .infinity)
-                .background(Color.yellow)
-                Button("Option 2") {
-                    
-                }
-                .padding()
-                .frame(maxWidth: .infinity)
-                .background(Color.yellow)
                 
-                Button("Option 3") {
+                HStack {
+                    Button(action: {
+                        
+                    }) {
+                        Image(systemName: "circle.fill")
+                        Text("Option 3")
+                    }
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .background(Color.yellow)
+                    .foregroundColor(.white)
                     
+                    Button(action: {
+                        
+                    }) {
+                        Image(systemName: "square.fill")
+                        Text("Option 4")
+                    }
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .background(Color.green)
+                    .foregroundColor(.white)
                 }
-                .padding()
-                .frame(maxWidth: .infinity)
-                .background(Color.yellow)
             }
         }
         .padding()
