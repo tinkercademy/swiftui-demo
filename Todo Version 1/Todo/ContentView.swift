@@ -45,7 +45,8 @@ struct ContentView: View {
                     todos.move(fromOffsets: source, toOffset: destination)
                 }
                 
-            }.listStyle(PlainListStyle())
+            }
+            .listStyle(PlainListStyle())
             .navigationBarTitle("Todos", displayMode: .inline)
             .navigationBarItems(leading: EditButton(),
                                 trailing: Button(action: {

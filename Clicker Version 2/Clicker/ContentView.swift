@@ -14,7 +14,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Text("Packets of Milo drunk during Circuit Breaker 2\n\(counter)")
+            Text("Packets of Milo drunk during Heightened Alert\n\(counter)")
                 
                 // Set huge font
                 .font(.system(size: 25))

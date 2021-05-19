@@ -33,45 +33,50 @@ struct FriendContentView: View {
     
     var body: some View {
         // Passing sloths over and presenting sloths
-        VStack {
-            Image(friends[index].slothImage)
-                .resizable()
-                .aspectRatio(contentMode: .fill)
+        if friends.count > index {
             
             VStack {
-                Text("\(friends[index].school), age \(friends[index].age)")
+                Image(friends[index].slothImage)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
                 
-                Divider()
-                
-                HStack(spacing: 8) {
-                    Text("Attack")
-                    Slider(value: $friends[index].attack, in: 0...15)
-                }
-                
-                HStack(spacing: 8) {
-                    Text("Defence")
-                    Slider(value: $friends[index].defence, in: 0...15)
-                }
-                
-                Divider()
-                
-                Button("Visit Website") {
-                    isWebsitePresented = true
-                }
-            }.padding()
-        }
-        .sheet(isPresented: $isWebsitePresented, content: {
-            if let url = URL(string: friends[index].website) {
-                SafariView(url: url)
+                VStack {
+                    Text("\(friends[index].school), age \(friends[index].age)")
+                    
+                    Divider()
+                    
+                    HStack(spacing: 8) {
+                        Text("Attack")
+                        Slider(value: $friends[index].attack, in: 0...15)
+                    }
+                    
+                    HStack(spacing: 8) {
+                        Text("Defence")
+                        Slider(value: $friends[index].defence, in: 0...15)
+                    }
+                    
+                    Divider()
+                    
+                    Button("Visit Website") {
+                        isWebsitePresented = true
+                    }
+                }.padding()
             }
-        })
-        .sheet(isPresented: $isPresentingEditView) {
-            NewFriendView(friends: $friends, isDeleted: $isDeleted, friendIndex: index)
+            .sheet(isPresented: $isWebsitePresented, content: {
+                if let url = URL(string: friends[index].website) {
+                    SafariView(url: url)
+                }
+            })
+            .sheet(isPresented: $isPresentingEditView) {
+                NewFriendView(friends: $friends, isDeleted: $isDeleted, friendIndex: index)
+            }
+            // Setting navigation title
+            .navigationTitle(friends[index].name)
+            .navigationBarItems(trailing: Button("Edit") {
+                isPresentingEditView = true
+            })
+        } else {
+            Text("No Friends")
         }
-        // Setting navigation title
-        .navigationTitle(friends[index].name)
-        .navigationBarItems(trailing: Button("Edit") {
-            isPresentingEditView = true
-        })
     }
 }
