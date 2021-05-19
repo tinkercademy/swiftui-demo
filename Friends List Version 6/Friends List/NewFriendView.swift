@@ -17,7 +17,7 @@ struct NewFriendView: View {
                                age: 0,
                                website: "")
     
-    @ObservedObject var manager = FriendsManager()
+    @Binding var friends: [Friend]
     
     @Binding var isDeleted: Bool
     
@@ -73,17 +73,23 @@ struct NewFriendView: View {
                 Section {
                     Button(friendIndex == nil ? "Add Friend" : "Save Changes") {
                         if let friendIndex = friendIndex {
-                            manager.friends[friendIndex] = friend
+                            friends[friendIndex] = friend
                         } else {
-                            manager.friends.append(friend)
+                            friends.append(friend)
                         }
                         
-                        manager.saveFriends()
+                        Friend.saveToFile(friends: friends)
                         
                         presentationMode.wrappedValue.dismiss()
                     }
                     Button(friendIndex == nil ? "Discard Friend" : "Delete Friend") {
                         isDeleted = true
+                        
+                        if let friendIndex = friendIndex {
+                            friends.remove(at: friendIndex)
+                            Friend.saveToFile(friends: friends)
+                        }
+                        
                         presentationMode.wrappedValue.dismiss()
                     }
                     .foregroundColor(.red)
@@ -92,7 +98,7 @@ struct NewFriendView: View {
             .listStyle(InsetGroupedListStyle())
             .onAppear {
                 if let friendIndex = friendIndex {
-                    friend = manager.friends[friendIndex]
+                    friend = friends[friendIndex]
                 }
             }
             .navigationTitle(friendIndex == nil ? "New Friend" : "Editing Friend")

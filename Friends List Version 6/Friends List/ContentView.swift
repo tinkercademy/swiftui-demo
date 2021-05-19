@@ -11,7 +11,7 @@ struct ContentView: View {
     
     // Creating a bunch of friends because i
     //   dont have real ones
-    @ObservedObject var manager = FriendsManager()
+    @State var friends: [Friend] = []
     
     @State var isPresentingNewFriend = false
     
@@ -25,23 +25,22 @@ struct ContentView: View {
             // Create a list to iterate through friends
             //   and display friend
             List {
-                ForEach(manager.friends) { friend in
+                ForEach(friends) { friend in
                     // When friends are tapped, show friend content view
                     //   As this is in a navigation view, we are able to
                     //   use a navigation link to accomplish this
                     NavigationLink(
-                        destination: FriendContentView(index: manager.friends.firstIndex(of: friend)!),
+                        destination: FriendContentView(friends: $friends,
+                                                       index: friends.firstIndex(of: friend)!),
                         label: {
                             FriendRowView(friend: friend)
                         })
                 }
                 .onDelete { offsets in
-                    manager.friends.remove(atOffsets: offsets)
-                    manager.saveFriends()
+                    friends.remove(atOffsets: offsets)
                 }
                 .onMove { source, destination in
-                    manager.friends.move(fromOffsets: source, toOffset: destination)
-                    manager.saveFriends()
+                    friends.move(fromOffsets: source, toOffset: destination)
                 }
             }
             // Add edit button
@@ -54,7 +53,9 @@ struct ContentView: View {
             .navigationTitle("My Friends")
             .environment(\.editMode, $editMode)
         }.sheet(isPresented: $isPresentingNewFriend) {
-            NewFriendView(isDeleted: $newFriendIsDeleted)
+            NewFriendView(friends: $friends, isDeleted: $newFriendIsDeleted)
+        }.onAppear {
+            friends = Friend.loadFromFile() ?? Friend.getSampleFriends()
         }
     }
 }

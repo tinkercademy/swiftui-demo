@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3223CE162652665A00325C40 /* FriendsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3223CE152652665A00325C40 /* FriendsManager.swift */; };
 		323CB58B265153CD0006FF9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323CB58A265153CD0006FF9A /* AppDelegate.swift */; };
 		323CB58D265153CD0006FF9A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323CB58C265153CD0006FF9A /* SceneDelegate.swift */; };
 		323CB58F265153CD0006FF9A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323CB58E265153CD0006FF9A /* ContentView.swift */; };
@@ -22,7 +21,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3223CE152652665A00325C40 /* FriendsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsManager.swift; sourceTree = "<group>"; usesTabs = 0; };
 		323CB587265153CD0006FF9A /* Friends List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Friends List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		323CB58A265153CD0006FF9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		323CB58C265153CD0006FF9A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,7 +71,6 @@
 				323CB58C265153CD0006FF9A /* SceneDelegate.swift */,
 				323CB58E265153CD0006FF9A /* ContentView.swift */,
 				323CB5A626519DD00006FF9A /* NewFriendView.swift */,
-				3223CE152652665A00325C40 /* FriendsManager.swift */,
 				323CB5A2265156AD0006FF9A /* FriendContentView.swift */,
 				323CB5A4265183B00006FF9A /* SafariView.swift */,
 				323CB5A02651564E0006FF9A /* FriendRowView.swift */,
@@ -166,7 +163,6 @@
 				323CB58B265153CD0006FF9A /* AppDelegate.swift in Sources */,
 				323CB58D265153CD0006FF9A /* SceneDelegate.swift in Sources */,
 				323CB5A3265156AD0006FF9A /* FriendContentView.swift in Sources */,
-				3223CE162652665A00325C40 /* FriendsManager.swift in Sources */,
 				323CB5A726519DD00006FF9A /* NewFriendView.swift in Sources */,
 				323CB58F265153CD0006FF9A /* ContentView.swift in Sources */,
 				323CB59F265154850006FF9A /* Friend.swift in Sources */,
